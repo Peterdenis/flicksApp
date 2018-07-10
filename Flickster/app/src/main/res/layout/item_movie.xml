@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivMovieImage"
+        android:layout_width="110dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="11dp"
+        tools:src="@mipmap/ic_launcher"
+        tools:ignore="ContentDescription"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/ibMovieTrailer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:alpha="0.5"
+        android:background="@drawable/roundcorner"
+        android:src="@drawable/play_button"
+        android:tint="?android:attr/colorPrimary"
+        tools:ignore="ContentDescription" />
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivMovieImage"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@+id/ivMovieImage"
+        android:layout_toRightOf="@+id/ivMovieImage"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Jurassic World: Fallen Kingdom" />
+
+    <TextView
+        android:id="@+id/tvOverView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvTitle"
+        android:layout_alignStart="@+id/tvTitle"
+        android:layout_below="@+id/tvTitle"
+        android:maxLength="150"
+        android:textColor="@android:color/black"
+        tools:text="Several years after the demise of Jurassic World, a volcanic eruption threatens the remaining dinosaurs on the island of Isla Nublar. Claire Dearing, the former park manager and founder of the Dinosaur Protection Group, recruits Owen Grady to help prevent the extinction of the dinosaurs once again." />
+
+</RelativeLayout>
